@@ -1,57 +1,50 @@
-# Umbraco Documentation project
- [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
+# Contributing Guidelines
 
-# Reading & using the docs
-This is the documentation project for Umbraco. The scope of this project is to provide overviews of concepts, tutorials, example code, and links to API reference.
+To contribute to either the documentation or stubs, you can fork & clone our repository, make your edits, and push back to GitHub and send us a pull request. All items that get pulled into the main repository will automatically get pushed to [our.umbraco.com/documentation](https://our.umbraco.com/documentation).
 
-# What's in the documentation
+Find detailed instructions on how to work with and contribute to the Umbraco Documentation in the [Contribution section](/Contribute/).
 
-## Getting started
-[Getting started](Getting-Started/) is an introduction to Umbraco, containing explanations of basic concepts and short tutorials.
+## Getting started with Git and GitHub
 
-## Implementation
-[Implementation](Implementation/) is an overview of Umbraco's structure and pipeline.
+* [Download GitHub Desktop](https://desktop.github.com)
+* [Configuring GitHub Desktop](https://help.github.com/desktop/guides/)
+* [Forking a GitHub repository](https://help.github.com/articles/fork-a-repo/)
+* [The basic guide to Git](https://rogerdudler.github.io/git-guide/)
 
-## Developers Reference
-[Reference](Reference/index.md) is a collection of API references specifically for developers working with and extending Umbraco.
+## Repository organisation
 
-## Extending
-[Extending](Extending/) is documentation on customizing and extending the backoffice.
+All active work done on the documentation is currently being done on the `main` branch.
 
-## Tutorials
-[Tutorials](Tutorials/) is a collection of the more extensive tutorials used in the documentation.
+### Keeping your UmbracoDocs fork in sync with the main repository
 
-# Markdown conventions
-The Umbraco Documentation uses Markdown for all of the documentation; please read about our [Markdown Conventions](Contribute/Markdown-Conventions/).
+If you decide to clone the UmbracoDocs repository on your local machine for making larger changes that can't be done directly on GitHub then we recommend you sync with our repository before you submit your pull request. That way, you can fix any potential merge conflicts and make our lives a little bit easier.
 
-# Annotating a document
+To sync your fork with this original one, you'll have to add the upstream URL, you only have to do this once:
 
-To add version information and extra keywords, [every document can be annotated using YAML](Contribute/Adding-Metadata/index.md).
-
-# Multi version documentation
-Every new version of Umbraco introduces new features. This means that every document might not work for your possibly older version.
-
-Therefore we introduced 2 different mechanisms:
-1. The [YAML metadata describing](Contribute/Adding-Metadata/index.md) `versionFrom` and `versionTo`.
-2. The possibility [to add multiple files about the same topic](Contribute/File-Naming-Conventions/index.md).
-
-# Previewing rendered output locally
-
-There is an experimental project which supports rendering the documentation locally.
-
-You can install the tool from [NuGet](https://www.nuget.org/packages/Umbraco.Docs.Preview.App/) by issuing the following command.
-
-```bash
-$ dotnet tool install --global Umbraco.Docs.Preview.App
+```xml
+git remote add upstream https://github.com/umbraco/UmbracoDocs.git
 ```
 
-Or check out the source at: [https://github.com/umbraco/UmbracoDocs.Preview](https://github.com/umbraco/UmbracoDocs.Preview).
+Then when you want to get the changes from the main repository:
 
-Once installed, navigate to your local clone of the UmbracoDocs repository and run the command `umbracodocs`. This will start a local webserver that's listening on `http://localhost:5000` and `https://localhost:5001` by default (the actual URLs will be shown), which you can open in your browser to view the rendered documentation.
+```xml
+git fetch upstream
+git rebase upstream/main
+```
 
-# Contributing [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/umbraco/UmbracoDocs/issues) [![GitHub contributors](https://img.shields.io/github/contributors/umbraco/UmbracoDocs.svg)](https://GitHub.com/umbraco/UmbracoDocsgraphs/contributors/)
-We :heart: valuable contributions from everyone who is willing to help. It does not matter to us if it's something trivial like correcting spelling mistakes, raising an issue or writing a tutorial! Every little bit of help counts and it all helps make Umbraco easier to use, for everyone.
-Otherwise, [bug reports](https://github.com/umbraco/UmbracoDocs/issues/), [bug fixes](https://github.com/umbraco/UmbracoDocs/pulls) and any feedback on Umbraco are always appreciated.
-Look at the [Contributor Guidelines](CONTRIBUTING.md) to learn how you can get involved and help with the Umbraco Documentation.
-## License [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)
-This library is released under the [MIT License](LICENSE.md).
+In this command, we're syncing with the `main` branch. You can choose another one if needed.
+
+### Contributing documentation
+
+All documents are written in Markdown, using a basic structure and stored as .md files.
+These are then pulled to [our.umbraco.com/documentation](https://our.umbraco.com/documentation) for browsing.
+
+First fork and clone the repository so that you have your own working copy. Then create a new branch on your local copy to make your changes. Once you are happy with your edits, use GitHub to issue a "pull request", which means your edits will be reviewed, and once accepted, merged into the main repository.
+
+**Note:** It's a good idea to pull in upstream changes, merge and commit to your own fork before submitting a pull request. Instructions on how to set up a remote repo and pull from upstream can be found on this [page](https://help.github.com/articles/fork-a-repo).
+
+Everything in the main repository will make it onto the [our.umbraco.com/documentation](https://our.umbraco.com/documentation) site, which is why we have chosen a pull request workflow to keep everything straightforward.
+
+## Planning & discussions
+
+If you want to report an issue, or you're planning a big change, use [GitHub issues](https://github.com/umbraco/UmbracoDocs/issues) for opening a discussion. If you want to do a small change, don't hesitate to do a pull request, we don't need you to create an issue first.
