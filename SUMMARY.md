@@ -1,3 +1,3 @@
 # Table of contents
 
-* [Welcome to the Umbraco Documentation](README.md)
+* [Welcome to the Umbraco Documentation](umbraco-documentation.md)
