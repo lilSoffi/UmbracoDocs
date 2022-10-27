@@ -7,6 +7,9 @@
 * [index](index.md)
 * [Legacy Documentation](legacy.md)
 * [gitbook](gitbook/README.md)
+* [.github](.github/README.md)
+* [ISSUE\_TEMPLATE](.github/issue\_template/README.md)
+  * [issue-template](.github/ISSUE\_TEMPLATE/issue-template.md)
 
 ## Tutorials
 
@@ -32,7 +35,3 @@
   * [Umbraco Cloud Project Overview](umbraco-cloud/getting-started/project-overview.md)
   * [Best Practice for Working in Teams on Umbraco Cloud](umbraco-cloud/getting-started/team-workflow-on-cloud.md)
   * [Umbraco Cloud Plans](umbraco-cloud/getting-started/umbraco-cloud-plans.md)
-
-* [.github](.github/README.md)
-* [ISSUE\_TEMPLATE](.github/issue\_template/README.md)
-  * [issue-template](.github/ISSUE\_TEMPLATE/issue-template.md)
