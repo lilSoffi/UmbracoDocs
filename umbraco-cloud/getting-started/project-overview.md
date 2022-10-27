@@ -24,6 +24,8 @@ To get a technical overview of your Cloud environments, see the [Environments](.
 
 Another major component of your Umbraco Cloud project is _Team Members_. When you add team members to a project, they will automatically be added as backoffice users in all the environments. Team members can be added as _Admins_, _Writers_, or _Readers_. Refer to the [Team Members](../../Umbraco-Cloud/Set-Up/Team-Members/) article to learn more about these roles.
 
+## Hello there
+
 ## Settings
 
 In the _Settings_ section, you can manage and configure your project to fit your needs. Learn more about the different settings in the [Project Settings](../../Umbraco-Cloud/Set-Up/Project-settings/) article.
