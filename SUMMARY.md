@@ -31,7 +31,7 @@
 
 * [Umbraco Cloud documentation](umbraco-cloud/README.md)
 * [Frequently asked questions](umbraco-cloud/frequently-asked.questions.md)
-* [Umbraco Cloud](umbraco-cloud/getting-started/README.md)
+* [Getting started](umbraco-cloud/getting-started/README.md)
   * [Umbraco Cloud Project Overview](umbraco-cloud/getting-started/project-overview.md)
   * [Best Practice for Working in Teams on Umbraco Cloud](umbraco-cloud/getting-started/team-workflow-on-cloud.md)
   * [Umbraco Cloud Plans](umbraco-cloud/getting-started/umbraco-cloud-plans.md)
